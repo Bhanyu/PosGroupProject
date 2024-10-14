@@ -1,0 +1,45 @@
+.burgerMenu{
+  
+    display: none;
+    @media (max-width:992px) {
+        display: block;
+    }
+    .burgerMenuLogo{
+     
+       font-size: 25px;
+       padding: 12px 20px;
+       background-color: rgb(246, 222, 6);
+       border-radius: 30px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       @media (max-width:568px) {
+       
+        padding: 10px ;
+       }
+       @media (min-width:569px) and (max-width:992px) {
+        padding: 12px ;
+     }
+    
+    }
+    .burgerMenuContent{
+      
+        display: none;
+        position:absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 10px 15px;
+        li{
+            list-style-type: none;
+            margin: 20px 0;
+            a{
+                color: aliceblue;
+            }
+        }
+        &.show{
+            background-color: rgb(246, 194, 6);
+            display: block;
+        }
+    }
+}
