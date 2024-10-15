@@ -1,3 +1,75 @@
-#mainPage{
-    background-color: blueviolet;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// @import '~bootstrap/scss/bootstrap';
+#nrspayPart{
+    background-image: url("https://www.posstore.az/static/media/banner11.cc415e33cd01387c4591.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 720px;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    
+    &::after{
+        content: "";
+        position: absolute;
+        inset:0;
+        width: 100%;
+        background-color: hsla(251, 64%, 33%, 0.344);
+        z-index: 0;
+    }
+    @media (max-width:568px) {
+        height: 400px;
+     }
+     @media (min-width:569px) and (max-width:768px) {
+       height: 400px;
+       }
+    .container{
+
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 60px 0;
+        @media (max-width:992px) {
+         padding: 60px 10px;
+         }
+         @media (min-width:993px) {
+            padding: 60px 20px;
+            }
+      
+
+        .descriptionPart{
+          
+           position: absolute;
+           width: 40%;
+           z-index: 1;
+                   
+            @media (max-width:992px) {
+              width: 90%;
+              margin: 0 auto;
+            
+             }
+             @media (min-width:993px) {
+                width: 40%;
+                margin: 0 auto;
+              
+               }
+            
+            h1{
+                color: #fff;
+                font-size: 62px;
+                @media (max-width:568px) {
+                  font-size: 30px;
+                 }
+                 @media (min-width:569px) and (max-width:768px) {
+                   font-size: 40px;
+                  }
+            }
+            p{
+                color: #fff;
+    opacity: .8;
+    font-size: 18px;
+            }
+        }
+    }
+
 }
