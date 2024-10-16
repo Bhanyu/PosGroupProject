@@ -3,10 +3,16 @@ import React from "react"
 
 
 import Nrspay from "./Nrspay"
+import Results from "./Results"
+import Sectors from "./Sectors"
+import Services from "./Services"
 const Home = ()=>{
     return(
        <>
        <Nrspay/>
+       <Services/>
+       <Sectors/>
+       <Results/>
        </>
     )
 }

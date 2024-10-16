@@ -1,4 +1,6 @@
 
+import styles from "../Home/home.module.scss"
+import classNames from "classnames";
 
 const Services = ()=>{
     return(
@@ -7,30 +9,98 @@ const Services = ()=>{
                 <h2 className={styles.title}>Xidmət növləri</h2>
                 <p  className={styles.subtitle}>İstənilən sektora aid xidmətlər</p>
            <div  className={classNames("row", styles.row)}>
-           <div className={classNames(" col-12 col-md-6 col-lg-4", styles.col)}>
-   <Link href="#">
+           <div className={classNames(" col-12 col-md-6 col-lg-2", styles.col)}>
+  
    <div className={classNames("card", styles.card)}>
-      <div className={classNames("card-body", styles.cardBody1)}>
-      <div className={classNames("card-content", styles.cardContext)}>
+   <div className={classNames("card-content", styles.cardİmg)}>
+   <img src="https://www.posstore.az/images/hero/h1.png" alt="" />
+     </div>
+   <div className={classNames("card-content", styles.cardContext)}>
       <h5 className={classNames("card-title", styles.cardTitle)}>
-          About Us
+         Ticarət
         </h5>
         <p className={classNames("card-text", styles.cardText)}>
-          For a cup of coffee to be truly special it needs to pass
-          through many hands and be treated with passion and commitment
-          in every link of the chain. From the producer to the roaster,
-          the barista to the customer, back to the producer and the
-          harvester, it’s a process that repeats itself every time we
-          serve a cup of coffee and needs to be cared for every step of
-          the way.,
+        12 fərqli sektor
         </p>
      </div>
-      </div>
     </div>
-   </Link>
+  
   </div>
+
+  <div className={classNames(" col-12 col-md-6 col-lg-2", styles.col)}>
+  
+  <div className={classNames("card", styles.card)}>
+  <div className={classNames("card-content", styles.cardİmg)}>
+  <img src="	https://www.posstore.az/images/hero/h2.png" alt="" />
+    </div>
+  <div className={classNames("card-content", styles.cardContext)}>
+     <h5 className={classNames("card-title", styles.cardTitle)}>
+        Ticarət
+       </h5>
+       <p className={classNames("card-text", styles.cardText)}>
+       12 fərqli sektor
+       </p>
+    </div>
+   </div>
+ 
+ </div>
+
+ <div className={classNames(" col-12 col-md-6 col-lg-2", styles.col)}>
+  
+  <div className={classNames("card", styles.card)}>
+  <div className={classNames("card-content", styles.cardİmg)}>
+  <img src="https://www.posstore.az/images/hero/h3.png" alt="" />
+    </div>
+  <div className={classNames("card-content", styles.cardContext)}>
+     <h5 className={classNames("card-title", styles.cardTitle)}>
+        Ticarət
+       </h5>
+       <p className={classNames("card-text", styles.cardText)}>
+       12 fərqli sektor
+       </p>
+    </div>
+   </div>
+ 
+ </div>
+
+ <div className={classNames(" col-12 col-md-6 col-lg-2", styles.col)}>
+  
+  <div className={classNames("card", styles.card)}>
+  <div className={classNames("card-content", styles.cardİmg)}>
+  <img src="	https://www.posstore.az/images/hero/h6.png" alt="" />
+    </div>
+  <div className={classNames("card-content", styles.cardContext)}>
+     <h5 className={classNames("card-title", styles.cardTitle)}>
+        Ticarət
+       </h5>
+       <p className={classNames("card-text", styles.cardText)}>
+       12 fərqli sektor
+       </p>
+    </div>
+   </div>
+ 
+ </div>
+
+ <div className={classNames(" col-12 col-md-6 col-lg-2", styles.col)}>
+  
+  <div className={classNames("card", styles.card)}>
+  <div className={classNames("card-content", styles.cardİmg)}>
+  <img src="https://www.posstore.az/images/hero/h4.png" alt="" />
+    </div>
+  <div className={classNames("card-content", styles.cardContext)}>
+     <h5 className={classNames("card-title", styles.cardTitle)}>
+        Ticarət
+       </h5>
+       <p className={classNames("card-text", styles.cardText)}>
+       12 fərqli sektor
+       </p>
+    </div>
+   </div>
+ 
+ </div>
            </div>
             </div>
         </section>
     )
 }
+export default Services

@@ -73,3 +73,291 @@
     }
 
 }
+#servicesTypes{
+ background-color: #F7F9FC;
+    max-width: 100%;
+    .container{
+   
+        max-width: 1300px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 100px 0;
+        @media (max-width:568px) {
+            max-width: 100%;
+            padding: 80px 15px;
+          }
+        .row{
+            max-width: 100%;
+            padding: 0;
+         
+            margin: 80px 0 0px;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            @media (max-width:568px) {
+              flex-direction: column;
+            
+             }
+             @media (min-width:569px) and (max-width:992px) {
+                flex-wrap: wrap;
+                justify-content: center;
+                
+                }
+            .col{
+             
+                padding: 0;
+             
+                width: 17%;
+
+                @media (max-width:568px) {
+                   width: 100%;
+                   margin: 20px 0;
+                 }
+                 @media (min-width:569px) and (max-width:768px) {
+                 width: 33%;
+                 margin: 20px 12px;
+                    }
+                    @media (min-width:769px) and (max-width:992px) {
+                     width: 40%;
+                     margin: 20px 10px;
+                        }
+                .card{
+                    box-shadow: 0 0 20px 0 #70798a2e;
+                    max-width: 100%;
+                    text-align: center;
+                    padding: 30px 10px;
+                    border: none;
+                    .cardİmg{
+                        max-width: 30%;
+
+                        margin: 10px auto 15px;
+                   
+                        img{
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#mainPages{
+    background-color: #122947;
+    max-width: 100%;
+    .container{
+    
+        max-width: 1300px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 50px 0;
+        color: #F7F9FC;
+        h2{
+            font-size: 50px;
+            // color: #122947;
+            @media (max-width:568px) {
+              font-size: 28px;
+                 
+                  }
+        }
+        p{
+            font-size: 20px;
+            color: #a9aeb8;
+        }
+        .fullScores{
+     
+            max-width: 100%;
+            margin: 50px 0 30px; 
+            .col{
+                background-color: transparent;
+            text-align: center;
+                
+                .scoreCard{
+                    background-color: transparent;
+                    border: none;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: #F7F9FC;
+                    .cardİcon{
+                        background-color: #2A3F5A;
+                        padding: 10px;
+                        border-radius: 4% 50%;;
+                        width: 40%;
+                        padding: 35px 0;
+                        margin: 30px 0;
+                        @media (max-width:568px) {
+                         width: 30%;
+                          
+                           }
+                           @media (min-width:569px) and (max-width:992px) {
+                           width: 25%;
+                              
+                              }
+                        .innerIcon{
+                        color: #F7F9FC;
+                            font-size: 35px;
+                        }
+                    }
+                    .cardContent{
+                      h5{
+                        font-size: 50px;
+                        font-weight: bolder;
+                      }
+                      p{
+                        font-size: 20px;
+                       color: #707c92;
+                      }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#givenSectors{
+    background-color: #fff;
+    max-width: 100%;
+    .container{
+        max-width: 1300px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 100px 0 50px;
+        @media (max-width:568px) {
+          max-width: 100%;
+             
+              }
+        h2{
+            font-size: 50px;
+            color: #122947;
+            @media (max-width:568px) {
+               font-size: 28px;
+                 
+                  }
+        }
+        p{
+            font-size: 20px;
+            color: #a9aeb8;
+            @media (max-width:568px) {
+                font-size: 16px;
+                    
+                     }
+        }
+        .sectorsInnerParts{
+      
+            max-width: 100%;
+            margin-top: 40px;
+            .fullScores{
+                max-width: 100%;
+                margin: 0;
+                padding: 0%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media (max-width:568px) {
+               flex-direction: column;
+                     
+                      }
+                      @media (min-width:569px) and (max-width:992px) {
+                        flex-wrap: wrap;
+                           
+                           }
+                .col{
+                    max-width: 32%;
+                    margin: 20px 0px;
+                    @media (max-width:568px) {
+                        max-width: 100%;
+                         
+                          }
+                          @media (min-width:569px) and (max-width:992px) {
+                           max-width: 50%;
+                               
+                               }
+                
+                   .sectorLink{
+
+                    max-width: 100%;
+                    text-decoration: none;
+                    .sectorCard{
+                        max-width: 100%;
+                        box-shadow: 0 0 20px 0 #70798a2e;
+                        border: none;
+                      
+                        .sectorCardImg{
+                            max-width: 100%;
+                            border-radius: 5px 5px 0 0;
+                            img{
+                                max-width: 100%;
+                            
+                                object-fit: cover;
+                                border-radius: 5px 5px 0 0;
+                            }
+                        }
+                        .sectorCardContent{
+                           
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            padding: 18px 12px 12px;
+                            border-radius: 0px 0px 5px 5px;
+                            .sectorCardContentLeft{
+                                text-align: left;
+                               h5{
+                                @media (max-width:568px) {
+                                    font-size: 18px;
+                                        
+                                         }
+                                         @media (min-width:569px) and (max-width:992px) {
+                                          font-size: 20px;
+                                               
+                                               }
+                               }
+                               p{
+                                @media (max-width:568px) {
+                                    font-size: 14px;
+                                        
+                                         }
+                                         @media (min-width:569px) and (max-width:992px) {
+                                           font-size: 16px;
+                                               
+                                               }
+                               }
+                                button{
+margin: 0px 0 18px;
+padding: 6px 15px;
+border-radius: 5px;
+border: none;
+color: #FF9C09;
+font-weight: bold;
+font-size:16px ;
+background-color: #FFF4E5;
+@media (max-width:568px) {
+  padding: 3px 12px;
+     
+      }
+
+                                }
+                                h5{
+                                    margin: 0;
+                                }
+                            }
+                            .sectorCardContentRight{
+                           
+                             .like{
+                                font-size:23px;
+                                color: #c0c3ca7c;
+                                @media (max-width:568px) {
+                                 font-size: 18px;
+                                     
+                                      }
+                             }
+                            }
+                        }
+                      
+                    }
+                   }
+                }
+            }
+        }
+    }
+}
