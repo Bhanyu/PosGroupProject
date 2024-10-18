@@ -1,5 +1,7 @@
 
 import React from "react"
+import Advantages from "./Advantages"
+import Customers from "./Customers"
 
 
 import Nrspay from "./Nrspay"
@@ -13,6 +15,8 @@ const Home = ()=>{
        <Services/>
        <Sectors/>
        <Results/>
+       <Advantages/>
+       <Customers/>
        </>
     )
 }

@@ -2,13 +2,16 @@ import React from "react";
 import styles from "../Header/header.module.scss"
 import posLogo from "../../../images/posLogo.png"
 import BurgerMenu from "./BurgerMenu";
+import { Link } from "react-router-dom";
 import { IoBagOutline } from "react-icons/io5";
 const Header = ()=>{
     return(
         <header id={styles.mainHeader}>
          <div className={styles.container}>
             <div className={styles.headerLogo}>
-                <img src={posLogo} alt="Logo"/>
+               <Link to={`/`}>
+               <img src={posLogo} alt="Logo"/>
+               </Link>
             </div>
             <div className={styles.navigation}>
                 <ul className={styles.navLinks}>

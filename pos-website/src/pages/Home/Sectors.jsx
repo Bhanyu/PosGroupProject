@@ -74,10 +74,10 @@ const Sectors = () => {
           <div className={classNames("row", styles.fullScores)}>
          {products.map((product)=>{
             return(
-                <div
+                <div key={product.id}
                 className={classNames(" col-12 col-md-6 col-lg-4", styles.col)}
               >
-                <Link className={styles.sectorLink}>
+                <Link className={styles.sectorLink} to={`/sectors/${product.id}`}>
                 
                 <div className={classNames("card", styles.sectorCard)}>
    <div className={styles.sectorCardImg}>
