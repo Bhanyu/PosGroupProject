@@ -43,17 +43,17 @@ const toggleSection = (section)=>{
                </Link>
                </li>
             <li>
-            <Link className={styles.footLink} to={`/`}>
+            <Link className={styles.footLink} to={`/about`}>
              Haqqımızda
                </Link>
             </li>
             <li>
-            <Link className={styles.footLink} to={`/`}>
+            <Link className={styles.footLink} to={`/partners`}>
              Tərəfdaşlarımız
                </Link>
             </li>
             <li>
-            <Link className={styles.footLink} to={`/`}>
+            <Link className={styles.footLink} to={`/equipments`}>
           Avadqanlıqlar
                </Link>
             </li>
@@ -63,7 +63,7 @@ const toggleSection = (section)=>{
                </Link>
             </li>
             <li>
-            <Link className={styles.footLink} to={`/`}>
+            <Link className={styles.footLink} to={`/sectors`}>
           Sektorlar
                </Link>
             </li>
@@ -158,17 +158,17 @@ const toggleSection = (section)=>{
                </Link>
                </li>
             <li>
-            <Link className={styles.footLink} to={`/`}>
+            <Link className={styles.footLink} to={`/about`}>
              Haqqımızda
                </Link>
             </li>
             <li>
-            <Link className={styles.footLink} to={`/`}>
+            <Link className={styles.footLink} to={`/partners`}>
              Tərəfdaşlarımız
                </Link>
             </li>
             <li>
-            <Link className={styles.footLink} to={`/`}>
+            <Link className={styles.footLink} to={`/equipments`}>
           Avadqanlıqlar
                </Link>
             </li>
@@ -178,7 +178,7 @@ const toggleSection = (section)=>{
                </Link>
             </li>
             <li>
-            <Link className={styles.footLink} to={`/`}>
+            <Link className={styles.footLink} to={`/sectors`}>
           Sektorlar
                </Link>
             </li>

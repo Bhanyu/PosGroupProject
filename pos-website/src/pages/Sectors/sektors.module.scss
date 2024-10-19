@@ -1,0 +1,125 @@
+#whoBg{
+    max-width: 100%;
+    .container{
+        max-width: 100%;
+        .bgFon{
+            max-width: 100%;
+            background-image: url("https://www.posstore.az/static/media/about.63def4fd7afb973bcb1d.jpg");
+            background-size: cover;
+            // background-repeat: no-repeat;
+            background-position: center;
+            height: 40vh;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(17, 40, 72, .629);
+                z-index:0;
+
+            }
+      
+            
+        }
+        .bgContent{
+            position: absolute;
+            top: 35%;
+            left: 10%;
+            color: #F7F9FC;
+                @media (max-width:568px) {
+          top: 28%;
+                 
+                  }
+                  @media (min-width:569px) and (max-width:992px) {
+                    top: 30%;
+                       
+                       }
+                       p{
+                        font-size: 20px;
+                       }
+            h1{
+                    font-size: 50px;
+font-weight: 500;
+    @media (max-width:568px) {
+          font-size: 30px;
+                 
+                  }
+                  @media (min-width:569px) and (max-width:992px) {
+                   font-size: 32px;
+                       
+                       }
+            }
+        }
+    }
+}
+
+#servicesTypes{
+    background-color: #F7F9FC;
+       max-width: 100%;
+       .container{
+      
+           max-width: 1300px;
+           margin: 0 auto;
+           text-align: center;
+           padding: 80px 0 ;
+           @media (max-width:568px) {
+               max-width: 100%;
+               padding: 80px 15px;
+             }
+           .row{
+               max-width: 100%;
+               padding: 0;
+            
+               margin: 0px 0 0px;
+               overflow: hidden;
+               display: flex;
+               justify-content: space-between;
+               @media (max-width:568px) {
+                 flex-direction: column;
+               
+                }
+                @media (min-width:569px) and (max-width:992px) {
+                   flex-wrap: wrap;
+                   justify-content: center;
+                   
+                   }
+               .col{
+                
+                   padding: 0;
+                
+                   width: 17%;
+   
+                   @media (max-width:568px) {
+                      width: 100%;
+                      margin: 20px 0;
+                    }
+                    @media (min-width:569px) and (max-width:768px) {
+                    width: 33%;
+                    margin: 20px 12px;
+                       }
+                       @media (min-width:769px) and (max-width:992px) {
+                        width: 40%;
+                        margin: 20px 10px;
+                           }
+                   .card{
+                       box-shadow: 0 0 20px 0 #70798a2e;
+                       max-width: 100%;
+                       text-align: center;
+                       padding: 30px 10px;
+                       border: none;
+                       .cardİmg{
+                           max-width: 30%;
+   
+                           margin: 10px auto 15px;
+                      
+                           img{
+                               max-width: 100%;
+                           }
+                       }
+                   }
+               }
+           }
+       }
+   }

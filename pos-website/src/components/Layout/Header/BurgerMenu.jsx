@@ -24,25 +24,25 @@ const toggleMenu = ()=>{
       </div>
       <ul className={`${styles.burgerMenuContent} ${isOpen ? styles.show : ""}`}>
         <li>
-          <a href="#">Əsas</a>
+          <a href="/">Əsas</a>
         </li>
         <li>
-          <a href="#">Haqqımızda</a>
+          <a href="/about">Haqqımızda</a>
         </li>
         <li>
-          <a href="#">Tərəfdaşlarımız</a>
+          <a href="/partners">Tərəfdaşlarımız</a>
         </li>
         <li>
           <a href="#">Əlaqə</a>
         </li>
         <li>
-          <a href="#">Proqram Təminatı</a>
+          <a href="/software">Proqram Təminatı</a>
         </li>
         <li>
-          <a href="#">Avadaqanlıqlar</a>
+          <a href="/equipments">Avadaqanlıqlar</a>
         </li>
         <li>
-          <a href="#">Sektorlar</a>
+          <a href="/sectors">Sektorlar</a>
         </li>
         <li>
           <a href="#">
