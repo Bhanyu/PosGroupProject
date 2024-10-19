@@ -1,6 +1,6 @@
 
 
-import styles from "../Home/home.module.scss";
+import styles from "../../components/Layout/Footer/footer.module.scss";
 const Questions = ()=>{
     return(
         <section id={styles.mainQuestions}>

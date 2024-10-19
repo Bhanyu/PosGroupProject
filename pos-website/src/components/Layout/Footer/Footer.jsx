@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "../Footer/footer.module.scss"
 import posLogo from "../../../images/posLogo.png"
+import Questions from "../../../pages/Home/Questions"
 import { Link } from "react-router-dom";
 const Footer = ()=>{
 
@@ -17,6 +18,8 @@ const toggleSection = (section)=>{
 
 
     return(
+       <>
+       <Questions/>
         <footer id={styles.mainFooter}>
            <div className={styles.container}>
            <div className={styles.footİnnerPart}>
@@ -275,6 +278,7 @@ const toggleSection = (section)=>{
           </div>
 
         </footer>
+       </>
     )
 }
 export default Footer

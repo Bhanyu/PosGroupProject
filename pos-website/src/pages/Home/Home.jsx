@@ -5,7 +5,7 @@ import Customers from "./Customers"
 
 
 import Nrspay from "./Nrspay"
-import Questions from "./Questions"
+
 import Results from "./Results"
 import Sectors from "./Sectors"
 import Services from "./Services"
@@ -21,7 +21,7 @@ const Home = ()=>{
        <Advantages/>
        <Customers/>
        <Sponsors/>
-       <Questions/>
+      
        </>
     )
 }
