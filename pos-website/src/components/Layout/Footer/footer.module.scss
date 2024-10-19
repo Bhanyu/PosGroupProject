@@ -1,3 +1,203 @@
 #mainFooter{
-    background-color: blue;
+   max-width: 100%;
+   background-color:
+   #122947 ;
+    .container{
+        max-width: 100%;
+        .footİnnerPart{
+            max-width: 1500px;
+       
+            margin: 0 auto;
+            display: flex;
+        
+         padding: 80px 0 100px;
+            justify-content: space-between;
+            @media (max-width:992px) {
+             flex-direction: column;
+             justify-content: center;
+             padding: 50px 10px;
+             }
+             @media (min-width:993px) and (max-width:1400px) {
+                flex-direction: column;
+                justify-content: center;
+              }
+            .footLeftPart{
+        
+                max-width: 50%;
+                @media (max-width:1400px) {
+                  max-width: 100%;
+                  text-align: center;
+                    }
+                img{
+                    max-width: 30%;
+                    @media (max-width:568px) {
+                     max-width: 50%;
+                        }
+                  
+                }
+                h2{
+                    color: white;
+                    margin: 20px 0;
+                }
+                p{
+                    font-size: 20px;
+                    color: #a9aeb8;
+                    margin: 20px 0;
+                }
+                form{
+                  
+                    max-width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    @media (max-width:568px) {
+                        flex-direction: column;
+                        justify-content: center;
+                        }
+                        @media (min-width:569px) and (max-width:768px) {
+                           max-width: 60%;
+                           flex-direction: column;
+                           justify-content: center;
+                           margin: 20px auto;
+                         }
+                         @media (min-width:769px) and (max-width:992px) {
+                            max-width: 70%;
+                            flex-direction: column;
+                            justify-content: center;
+                            margin: 20px auto;
+                          }
+                          @media (min-width:993px) and (max-width:1400px) {
+                            max-width: 40%;
+                            flex-direction: column;
+                            justify-content: center;
+                            margin: 40px auto;
+                         }
+                    input{
+                        padding: 16px 12px;
+                        width: 70%;
+                        border-radius: 10px;
+                        border: none;
+                        outline: none;
+                        @media (max-width:1400px) {
+                         width: 100%;
+                         margin-bottom: 12px;
+                            }
+                      
+                    }
+                    button{
+                        width: 20%;
+                        border: none;
+                        border-radius: 10px;
+                        padding: 16px 12px;
+                        background: #f1592a;
+  
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    @media (max-width:1400px) {
+    width: 100%;
+        }
+                    }
+                }
+            }
+            .footRightPart{
+      
+                display: flex;
+                justify-content: space-between;
+                max-width: 50%;
+          
+            @media (max-width:992px) {
+                display: none;
+            }
+            @media (min-width:993px) and (max-width:1400px) {
+            
+         
+          
+             max-width: 100%;
+             padding: 0 50px;
+          
+             }
+              
+                ul{
+              
+                    padding: 0;
+                    margin: 0 20px;
+                   li{
+                    list-style: none;
+                    margin: 12px 0;
+                    padding: 0;
+                    &.footListHead{
+                        font-weight: 500;
+                        margin-bottom: 30px;
+                        color: #fff;
+                        font-size: 26px;
+                    }
+                    .footLink{
+                        text-decoration: none;
+                        color: #a9aeb8;
+                        font-size: 19px;
+                    }
+                  
+                   }
+                 
+                }
+               
+              
+            }
+            .footRightPartResponsive{
+                display: none;
+                @media (max-width:992px) {
+                   
+                    display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                max-width: 100%;
+                margin: 18px 0;
+                padding: 0 12px;
+                }
+                
+                ul{
+              
+                    padding: 0;
+                    margin: 0 20px;
+                    
+                    max-width: 100%;
+                   li{
+                    list-style: none;
+                    margin: 12px 0;
+                    padding: 0;
+                    &.footListHead{
+                        font-weight: 500;
+                        margin-bottom: 30px;
+                        color: #fff;
+                        font-size: 26px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                  
+                  
+                   }
+                   .subList{
+                   
+                    .footLink{
+                        text-decoration: none;
+                        color: #a9aeb8;
+                        font-size: 19px;
+                    }
+                   }
+                 
+                }
+            }
+        }
+        .footBottomPart{
+            max-width: 100%;
+   
+            text-align: center;
+            border-top:2px solid #a9aeb8; ;
+            padding: 20px 0;
+            color: #fff;
+        }
+    }
 }
