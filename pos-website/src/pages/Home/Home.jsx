@@ -5,9 +5,12 @@ import Customers from "./Customers"
 
 
 import Nrspay from "./Nrspay"
+import Questions from "./Questions"
 import Results from "./Results"
 import Sectors from "./Sectors"
 import Services from "./Services"
+import Sponsors from "./Sponsors";
+
 const Home = ()=>{
     return(
        <>
@@ -17,6 +20,8 @@ const Home = ()=>{
        <Results/>
        <Advantages/>
        <Customers/>
+       <Sponsors/>
+       <Questions/>
        </>
     )
 }
