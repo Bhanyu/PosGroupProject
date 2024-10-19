@@ -9,6 +9,7 @@ import Partners from './pages/Partners/Partners';
 import Sektors from './pages/Sectors/Sektors';
 import Equipments from './pages/Equipments/Equipments';
 import Software from './pages/Software/Software';
+import Connect from './pages/Connect/Connect';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="sectors" element={<Sektors/>} />
           <Route path="equipments" element={<Equipments/>} />
           <Route path="software" element={<Software/>} />
+          <Route path="connection" element={<Connect/>} />
         </Route>
       </Routes>
     </>

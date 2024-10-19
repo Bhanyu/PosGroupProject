@@ -33,7 +33,7 @@ const toggleMenu = ()=>{
           <a href="/partners">Tərəfdaşlarımız</a>
         </li>
         <li>
-          <a href="#">Əlaqə</a>
+          <a href="/connection">Əlaqə</a>
         </li>
         <li>
           <a href="/software">Proqram Təminatı</a>

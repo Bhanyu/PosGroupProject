@@ -18,7 +18,7 @@ const Header = ()=>{
                     <li><a href="/">Əsas</a></li>
                     <li><a href="/about">Haqqımızda</a></li>
                     <li><a href="/partners">Tərəfdaşlarımız</a></li>
-                    <li><a href="#">Əlaqə</a></li>
+                    <li><a href="/connection">Əlaqə</a></li>
                     <li><a href="/software">Proqram Təminatı</a></li>
                     <li><a href="/equipments">Avadaqanlıqlar</a></li>
                     <li><a href="/sectors">Sektorlar</a></li>

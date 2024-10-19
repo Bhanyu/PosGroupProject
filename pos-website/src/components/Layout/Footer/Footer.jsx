@@ -58,7 +58,7 @@ const toggleSection = (section)=>{
                </Link>
             </li>
             <li>
-            <Link className={styles.footLink} to={`/`}>
+            <Link className={styles.footLink} to={`/connection`}>
            Əlaqə
                </Link>
             </li>
@@ -173,7 +173,7 @@ const toggleSection = (section)=>{
                </Link>
             </li>
             <li>
-            <Link className={styles.footLink} to={`/`}>
+            <Link className={styles.footLink} to={`/connection`}>
            Əlaqə
                </Link>
             </li>
