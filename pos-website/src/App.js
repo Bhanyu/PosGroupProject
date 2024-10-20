@@ -10,7 +10,7 @@ import Sektors from './pages/Sectors/Sektors';
 import Equipments from './pages/Equipments/Equipments';
 import Software from './pages/Software/Software';
 import Connect from './pages/Connect/Connect';
-
+import Bags from './pages/Bag/Bags';
 function App() {
   return (
     <>
@@ -24,6 +24,7 @@ function App() {
           <Route path="equipments" element={<Equipments/>} />
           <Route path="software" element={<Software/>} />
           <Route path="connection" element={<Connect/>} />
+          <Route path="bags" element={<Bags/>} />
         </Route>
       </Routes>
     </>

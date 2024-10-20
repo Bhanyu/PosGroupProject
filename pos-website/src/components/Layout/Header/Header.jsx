@@ -22,7 +22,7 @@ const Header = ()=>{
                     <li><a href="/software">Proqram Təminatı</a></li>
                     <li><a href="/equipments">Avadaqanlıqlar</a></li>
                     <li><a href="/sectors">Sektorlar</a></li>
-                    <li><a href="#" className={styles.bag}><IoBagOutline /></a></li>
+                    <li><a href="/bags" className={styles.bag}><IoBagOutline /></a></li>
                 </ul>
             </div>
            <BurgerMenu/>

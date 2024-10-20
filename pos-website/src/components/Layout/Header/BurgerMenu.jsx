@@ -45,7 +45,7 @@ const toggleMenu = ()=>{
           <a href="/sectors">Sektorlar</a>
         </li>
         <li>
-          <a href="#">
+          <a href="/bags">
           <IoBagOutline />
 
           </a>
