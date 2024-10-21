@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/PosGroupProject/static/css/main.89eb5d03.css",
+    "main.js": "/PosGroupProject/static/js/main.c09bc3fe.js",
+    "static/media/winson.jpg": "/PosGroupProject/static/media/winson.79f98ac5773bf3ba72f5.jpg",
+    "static/media/datalogic.jpg": "/PosGroupProject/static/media/datalogic.0abc64dc43d9765ef871.jpg",
+    "static/media/winson2.jpg": "/PosGroupProject/static/media/winson2.c0b13f62900217582763.jpg",
+    "static/media/netum.jpg": "/PosGroupProject/static/media/netum.1d433cb1b1724a5576b1.jpg",
+    "static/media/money.jpg": "/PosGroupProject/static/media/money.7acd7d608578b95569c0.jpg",
+    "static/media/posLogo.png": "/PosGroupProject/static/media/posLogo.7bf30dcfcb7b329e47ac.png",
+    "static/media/vip.jpg": "/PosGroupProject/static/media/vip.c06616830ae05d0e08d7.jpg",
+    "static/media/premium.jpg": "/PosGroupProject/static/media/premium.1aa60f914a415a396ad8.jpg",
+    "static/media/platinium.jpg": "/PosGroupProject/static/media/platinium.70c089159410023be751.jpg",
+    "static/media/gold.jpg": "/PosGroupProject/static/media/gold.6106f41c64c698d4c64c.jpg",
+    "static/media/download.jpg": "/PosGroupProject/static/media/download.b3e471d5bfb11cdd31a7.jpg",
+    "static/media/silver.jpg": "/PosGroupProject/static/media/silver.111415e4f84b5daf5139.jpg",
+    "static/media/logo.svg": "/PosGroupProject/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/PosGroupProject/index.html",
+    "main.89eb5d03.css.map": "/PosGroupProject/static/css/main.89eb5d03.css.map",
+    "main.c09bc3fe.js.map": "/PosGroupProject/static/js/main.c09bc3fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89eb5d03.css",
+    "static/js/main.c09bc3fe.js"
+  ]
+}
