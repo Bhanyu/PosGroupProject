@@ -3,7 +3,8 @@
     .bagContainer{
         max-width: 100%;
         padding: 60px 0 20px;
-        .bagImg{
+      div{
+          .bagImg{
             max-width: 30%;
             margin: 10px auto 20px;
             text-align: center;
@@ -20,10 +21,7 @@
             }
         }
         .bagCard{
-            // max-width: 30%;
-            // text-align: center;
-            // background-color: red;
-            // margin: 20px auto;
+         
             margin: 0px auto;
             max-width: 500px;
             padding: 32px 16px;
@@ -51,9 +49,10 @@
                 padding-right: 40px;
                 margin-top: -8px;
             }
-            button{
+            a{
                 background-color: rgb(52, 144, 220);
                 border-radius: 8px;
+                text-decoration: none;
                 cursor: pointer;
                 padding: 8px 32px;
                 font-family: "Nunito Sans", sans-serif;
@@ -64,5 +63,138 @@
                 border: none;
             }
         }
+      }
+      .totalBox{
+    max-width: 1400px;
+    
+            margin-top: 40px;
+           margin: 0 auto;
+                text-align: center;
+             
+
+    
+                @media (max-width:568px) {
+               flex-direction: column;
+                     
+                      }
+                      @media (min-width:569px) and (max-width:992px) {
+                        flex-wrap: wrap;
+                           
+                           }
+
+               .bagItems{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                .cartItem{
+                       
+                    box-shadow: 0 0 20px 0 #70798a2e;
+                    border: none;
+                    max-width: 28%;
+                margin: 20px 12px;
+                
+                
+                  @media (max-width:568px) {
+                    max-width: 100%;
+                  
+                     
+                      }
+                      @media (min-width:569px) and (max-width:992px) {
+                       max-width: 50%;
+                           
+                           }
+                  
+                        img{
+                            max-width: 100%;
+                        height: 300px;
+                            object-fit: cover;
+                            border-radius: 5px 5px 0 0;
+                        }
+                    
+                    .sectorCardContent{
+                       
+                        // display: flex;
+                        // justify-content: space-between;
+                        // align-items: flex-start;
+                        padding: 18px 12px 12px;
+                        // border-radius: 0px 0px 5px 5px;
+                        
+                        //     text-align: left;
+                        //     display: flex;
+                        //     flex-direction: column;
+                           h4{
+                            color: #101011;
+                            @media (max-width:568px) {
+                                font-size: 18px;
+                                    
+                                     }
+                                     @media (min-width:569px) and (max-width:992px) {
+                                      font-size: 20px;
+                                           
+                                           }
+                           }
+                           p{
+                            margin: 15px 0;
+                            font-size: 23px;
+                            color: #98b8f4;
+                            font-weight: 500;
+                            @media (max-width:568px) {
+                                font-size: 14px;
+                                    
+                                     }
+                                     @media (min-width:569px) and (max-width:992px) {
+                                       font-size: 16px;
+                                           
+                                           }
+                           }
+                          
+                      
+                        
+                     
+                    }
+                    .controlBtns{
+                    
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0 30px;
+                        button{
+
+                            margin: 0px 0 18px;
+                            padding: 6px 15px;
+                            border-radius: 5px;
+                            border: none;
+                               
+                                
+                                    background-color: #f10e06;
+                                    color: #F7F9FC;
+                                    font-weight: 500;
+                                  
+                                  text-align: center;
+                                    font-size: 18px;
+                                 
+                                 
+                              
+                                  
+                                  
+                                  @media (max-width:568px) {
+                              padding: 3px 12px;
+                                 
+                                  }
+                                  &.increaseBtn,
+                                  &.decreaseBtn{
+                                    background-color: #055df5;
+                                    font-size: 23px;
+                                    font-weight: 700;
+                                    padding: 0 20px;
+                                  }
+                            
+                                                            }
+                    }
+                  
+                }
+               }
+      }
     }
 }

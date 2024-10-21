@@ -18,16 +18,27 @@ const [programs , setPrograms] = useState([])
 
 useEffect(()=>{
     setPrograms([
-        {id:1 , name:"A BRONZE PAKET" , price:150, img:bronze},
-        {id:2 , name:"B SILVER PAKET" , price:250, img:silver},
-        {id:3 , name:"C GOLD PAKET" , price:350, img:gold},
-        {id:4 , name:"D PLATİNUM PAKET" , price:450, img:platinium},
-        {id:5 , name:"E PREMİUM PAKET" , price:0, img: premium},
-        {id:6 , name:"F VİP PAKET" , price:0, img: vip},
+        {id:11 , name:"A BRONZE PAKET" , price:150, image:bronze},
+        {id:12 , name:"B SILVER PAKET" , price:250, image:silver},
+        {id:13 , name:"C GOLD PAKET" , price:350, image:gold},
+        {id:14 , name:"D PLATİNUM PAKET" , price:450, image:platinium},
+        {id:15 , name:"E PREMİUM PAKET" , price:650, image: premium},
+        {id:16 , name:"F VİP PAKET" , price:750, image: vip},
 
     ])
 })
+const addToCart = (item) => {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const existingItem = cart.find((cartItem) => cartItem.id === item.id);
 
+    if (existingItem) {
+      existingItem.quantity += 1; 
+    } else {
+      cart.push({ ...item, quantity: 1 }); 
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart)); 
+  };
 
     return(
   <>
@@ -37,20 +48,20 @@ useEffect(()=>{
             <div className={styles.softwareInnerParts}>
                 <div className={classNames("row", styles.fullSoftware)}>
                     {
-                        programs.map((program,index)=>{
+                        programs.map((item,index)=>{
                             return(
                                 <div key={index} className={classNames("col-12 col-md-6 col-lg-3", styles.softwareCard)}>
                                     <div className={classNames("card", styles.card)}>
                                     <div className={styles.softwareCardImg}>
-    <img src={program.img} alt="" />
+    <img src={item.image} alt="" />
    </div>
 
    <div className={styles.softwareCardContent}>
-   <h5>{program.name}</h5>
-   <p>{program.price} AZN</p>
+   <h5>{item.name}</h5>
+   <p>{item.price} AZN</p>
                       <button className={styles.more}>Ətraflı</button>
                      
-                      <button className={styles.addBasket}>Səbətə əlavə et <LuShoppingBasket className={styles.basket}/> </button>
+                      <button className={styles.addBasket} onClick={()=>{addToCart(item)}}>Səbətə əlavə et <LuShoppingBasket className={styles.basket}/> </button>
                   
                  
                   </div >
@@ -68,3 +79,6 @@ useEffect(()=>{
     )
 }
 export default Software
+
+
+

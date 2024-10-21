@@ -1,69 +1,6 @@
 
-// import { useEffect, useState } from "react"
-// import styles from "../Bag/bags.module.scss"
-
-// const Bags = ()=>{
-
-//     const [cardItems, setCardItems] = useState([])
-// useEffect(()=>{
-//     const card = JSON.parse(localStorage.getItem('card')) || [];
-//     setCardItems(card);
-// },[])
-// const removeFromCart = (id) => {
-//     const updatedCart = cardItems.filter(item => item.id !== id); 
-//     setCardItems(updatedCart);
-//     localStorage.setItem('cart', JSON.stringify(updatedCart));
-//   };
-// const totalPrice = cardItems.reduce((total,item)=>total + item.price2 *item.quantity, 0)
-
-//     return(
-//         <section id={styles.shopBag}>
-//             <div className={styles.bagContainer}>
-//            {
-//             cardItems.length === 0 ? (
-//                 <div>
-//                      <div className={styles.bagImg}>
-//                 <img src="https://www.posstore.az/emptyCart.png" alt="" />
-//                 </div>
-//                 <div className={styles.bagCard}>
-//                 <h2>SƏBƏTİNİZ BOŞDUR</h2>
-//                 <p>Biznesinizə az, Özünüzə isə daha çox vaxt ayırın</p>
-//                 <button>Məhsullara keçid et</button>
-//                 </div>
-//                 </div>
-//             ) : (
-//                 <div>
-//                 <h2>Səbətdəki Məhsullar</h2>
-//                 {cardItems.map((item) => (
-//                   <div key={item.id} className={styles.cartItem}>
-//                     <img src={item.image} alt={item.name} />
-//                     <div>
-//                       <h4>{item.name}</h4>
-//                       <p>{item.price2} AZN x {item.quantity}</p>
-//                       <button 
-//                   className={styles.removeBtn} 
-//                   onClick={() => removeFromCart(item.id)}
-//                 >
-//                   Sil
-//                 </button>
-
-//                     </div>
-//                   </div>
-//                 ))}
-//                 <h3>Cəmi: {totalPrice} AZN</h3>
-//               </div>
-//             )
-//            }
-//             </div>
-//         </section>
-//     )
-// }
-// export default Bags
-
-
-
-import React, { useEffect, useState } from 'react';
-import styles from "../Bag/bags.module.scss";
+import { useEffect, useState } from "react"
+import styles from "../Bag/bags.module.scss"
 
 const Bags = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -73,14 +10,36 @@ const Bags = () => {
     setCartItems(cart);
   }, []);
 
-  // Məhsulu səbətdən silən funksiyanı yazırıq
+
   const removeFromCart = (id) => {
-    const updatedCart = cartItems.filter(item => item.id !== id); // Məhsulu id-ə görə filtrləyib silirik
-    setCartItems(updatedCart); // Yenilənmiş səbəti state-ə təyin edirik
-    localStorage.setItem('cart', JSON.stringify(updatedCart)); // Yenilənmiş səbəti localStorage-da saxlayırıq
+    const updatedCart = cartItems.filter(item => item.id !== id);
+    setCartItems(updatedCart);
+    localStorage.setItem('cart', JSON.stringify(updatedCart));
   };
 
-  const totalPrice = cartItems.reduce((total, item) => total + item.price2 * item.quantity, 0);
+  const increaseQuantity = (id)=>{
+const updatedCart = cartItems.map((item)=>{
+  if(item.id === id){
+    return {...item, quantity: item.quantity + 1};
+  }
+  return item;
+});
+setCartItems(updatedCart);
+localStorage.setItem('cart', JSON.stringify(updatedCart));
+  }
+
+  const decreaseQuantity = (id)=>{
+    const updatedCart = cartItems.map((item)=>{
+      if(item.id === id && item.quantity > 1){
+        return {...item, quantity: item.quantity - 1};
+      }
+      return item;
+    });
+    setCartItems(updatedCart);
+    localStorage.setItem('cart', JSON.stringify(updatedCart));
+      }
+
+  const totalPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
 
   return (
     <section id={styles.shopBag}>
@@ -93,27 +52,37 @@ const Bags = () => {
             <div className={styles.bagCard}>
               <h2>SƏBƏTİNİZ BOŞDUR</h2>
               <p>Biznesinizə az, Özünüzə isə daha çox vaxt ayırın</p>
-              <button>Məhsullara keçid et</button>
+              <a href="/equipments">Məhsullara keçid et</a>
             </div>
           </div>
         ) : (
-          <div>
+          <div className={styles.totalBox}>
             <h2>Səbətdəki Məhsullar</h2>
+            <div className={styles.bagItems}>
             {cartItems.map((item) => (
               <div key={item.id} className={styles.cartItem}>
                 <img src={item.image} alt={item.name} />
-                <div>
+                <div className={styles.sectorCardContent}>
                   <h4>{item.name}</h4>
-                  <p>{item.price2} AZN x {item.quantity}</p>
+                  <p>{item.price} AZN x {item.quantity}</p>
                 </div>
+                <div className={styles.controlBtns}>
+                  <button className={styles.decreaseBtn} onClick={()=>{decreaseQuantity(item.id)}} >
+-
+                  </button>
                 <button 
                   className={styles.removeBtn} 
                   onClick={() => removeFromCart(item.id)}
                 >
                   Sil
                 </button>
+                <button className={styles.increaseBtn} onClick={()=>{increaseQuantity(item.id)}} >
++
+                  </button>
+                </div>
               </div>
             ))}
+            </div>
             <h3>Cəmi: {totalPrice} AZN</h3>
           </div>
         )}
@@ -123,3 +92,7 @@ const Bags = () => {
 };
 
 export default Bags;
+
+
+
+
