@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PosGroupProject/static/css/main.89eb5d03.css",
-    "main.js": "/PosGroupProject/static/js/main.c09bc3fe.js",
+    "main.js": "/PosGroupProject/static/js/main.950900ad.js",
     "static/media/winson.jpg": "/PosGroupProject/static/media/winson.79f98ac5773bf3ba72f5.jpg",
     "static/media/datalogic.jpg": "/PosGroupProject/static/media/datalogic.0abc64dc43d9765ef871.jpg",
     "static/media/winson2.jpg": "/PosGroupProject/static/media/winson2.c0b13f62900217582763.jpg",
@@ -17,10 +17,10 @@
     "static/media/logo.svg": "/PosGroupProject/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/PosGroupProject/index.html",
     "main.89eb5d03.css.map": "/PosGroupProject/static/css/main.89eb5d03.css.map",
-    "main.c09bc3fe.js.map": "/PosGroupProject/static/js/main.c09bc3fe.js.map"
+    "main.950900ad.js.map": "/PosGroupProject/static/js/main.950900ad.js.map"
   },
   "entrypoints": [
     "static/css/main.89eb5d03.css",
-    "static/js/main.c09bc3fe.js"
+    "static/js/main.950900ad.js"
   ]
 }
