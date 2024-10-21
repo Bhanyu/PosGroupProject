@@ -50,7 +50,7 @@ import Bags from './pages/Bag/Bags';
 
 function App() {
   return (
-    <Router> {/* Wrapping the routes inside HashRouter */}
+    <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -69,5 +69,8 @@ function App() {
 }
 
 export default App;
+
+
+
 
 

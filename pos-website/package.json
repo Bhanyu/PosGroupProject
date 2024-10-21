@@ -2,7 +2,7 @@
   "name": "pos-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bhanyu.github.io/PosGroupProject/",
+  "homepage": "https://bhanyu.github.io/PosGroupProject",
 
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
